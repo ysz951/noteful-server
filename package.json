@@ -8,9 +8,12 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "predeploy": "npm audit",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku deploying:master"
   },
   "keywords": [],
+  "engines": {
+    "node": "12.16.3"
+  },
   "author": "Shengyang Zhou <shengyang_zhou@hotmail.com>",
   "license": "ISC",
   "dependencies": {

@@ -64,7 +64,6 @@ foldernoteRouter
     const { id } = req.params;
     const note = notes.find(n => n.id == id);
   
-    // make sure we found a card
     if (!note) {
       logger.error(`Note with id ${id} not found.`);
       return res
@@ -134,7 +133,6 @@ foldernoteRouter
     const { id } = req.params;
     const folder = folders.find(f => f.id == id);
   
-    // make sure we found a card
     if (!folder) {
       logger.error(`Folder with id ${id} not found.`);
       return res

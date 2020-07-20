@@ -24,7 +24,5 @@ app.get('/', (req, res) => {
     res.send('Hello, world!')
 })
 
-// app.use(notesRouter)
-// app.use(foldersRouter)
 app.use(foldernoteRouter)
 module.exports = app
